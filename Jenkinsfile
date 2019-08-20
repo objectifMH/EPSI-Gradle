@@ -3,7 +3,7 @@ pipeline {
   stages {
         stage('Compile') {
             steps {
-                 'gradlew bootJar'
+                bat 'gradlew bootJar'
             }
         }
         stage('Unit Tests') {
